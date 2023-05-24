@@ -36,7 +36,10 @@ class Conference
     {
         return $this->id;
     }
-
+    public function __toString(): string
+    {
+        return $this->city.' '.$this->year;
+    }
     public function getCity(): ?string
     {
         return $this->city;
